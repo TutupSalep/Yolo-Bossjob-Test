@@ -1,0 +1,11 @@
+.App {
+  background: #f9f9f9;
+}
+
+.App-Wrapper {
+  max-width: 375px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 700px;
+}
+

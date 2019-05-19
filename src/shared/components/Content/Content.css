@@ -1,0 +1,56 @@
+.content {
+    height: 50px;
+    scroll-behavior: smooth;
+}
+.list {
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction:row;
+}
+.headList {
+    height: 40px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction:row;
+}
+.listPaginate {
+    height: 40px;
+    width:300px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction:row;
+}
+.totalJobs {
+    font-size: 12px;
+    font-weight: bold;
+}
+.listContent {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.icon {
+    color: #2579E9;
+    width: 15px;
+    height: 15px;
+}
+.Logo {
+    width: 40px;
+    height: 40px;
+}
+.disabled {
+    color: #d8d8d8;
+    text-decoration: none;
+}
+.active {
+    color: #2579E9;
+    text-decoration: none;
+}
