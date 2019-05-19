@@ -7,5 +7,6 @@
   margin: 0 auto;
   background: #fff;
   min-height: 700px;
+  scroll-behavior: smooth;
 }
 

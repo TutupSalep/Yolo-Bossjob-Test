@@ -39,18 +39,17 @@ class Content extends Component {
         // update state with new page of items
         this.setState({ pageOfItems: pageOfItems });
         this.props.pagination(pageOfItems);
-        // this.scrollToMyRef()
     }
 
-    scrollToMyRef = () => window.scrollTo(0, this.myRef.offsetTop);
+    scrollToMyRef = () => window.scroll({top: 0, left: 0, behavior: 'smooth' });
 
     componentWillMount() {
-        this.setState({data:this.props.data})
+        this.setState({data:this.props.data});
     }
 
     componentWillReceiveProps(nextProps) {
         // console.log('props content',nextProps);
-        this.setState({data:nextProps.data})
+        this.setState({data:nextProps.data});
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -61,6 +60,9 @@ class Content extends Component {
                 exampleItems: exampleItems,
                 pageOfItems: []
             });
+            this.scrollToMyRef()
+        }
+        if (this.state.pageOfItems !== prevState.pageOfItems) {
             this.scrollToMyRef()
         }
     }
